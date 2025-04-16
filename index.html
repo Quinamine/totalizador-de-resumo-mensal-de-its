@@ -128,7 +128,7 @@
                             <span>TOTAL</span>
                         </div>
                         <div class="--display-flex-xy-center">
-                            <span><u>TOTAL <br>de <br>UNIDADE SANITÁRIA</u></span>
+                            <span class="line-height-gt-1"><u>TOTAL <br>de <br>UNIDADE SANITÁRIA</u></span>
                         </div>
                     </div>
                     <div class="ficha__grade-sup__col-2">
@@ -232,14 +232,14 @@
                             <input type="number" readonly class="l2-c6 --border-r-thicker --border-b">
                             <input type="number" readonly class="l2-c7 --border-b">
                             <div class="ficha__grade-sup__col-total-sindrome-its colspan-4 --display-flex-xy-center --border-b"><span class="--display-flex-xy-center">Total de Síndromes ITS</span></div>
-                            <input type="number" readonly class="l3-c1 input-l3-c1 --border-b">
+                            <input type="number" readonly class="l3-c1 input-l3-c1">
                         </div>
                     </div>
                 </div>
                 <div class="ficha__grade-inf">
-                    <div class="ficha__grade-inf__col1 --border-thick --border-t-thicker">
+                    <div class="ficha__grade-inf__col1 --border-thick --border-t-thicker --border-b-thicker">
                         <div class="ficha__grade-inf__header --border-b-thick">
-                            <div class="rowspan-3 --border-r-thick">
+                            <div class="--display-flex-y-center rowspan-3 --border-r-thick">
                                 <span class="line-height-gt-1">Análise mensal dos indicadores <br>na Unidade Sanitária <br>
                                     <svg style="width: 12px; height: 16px; display: inline-block; margin-left: 22px">
                                         <line x1="6" x2="6" y1="0" y2="10" stroke="black" stroke-width="3"></line>
@@ -293,7 +293,7 @@
                         </div>
                         <div class="ficha__grade-inf__linha --border-b-thick">
                             <div class="--display-flex-y-center --border-r-thick">
-                                <span>2.2. % Novos casos ITS que conhecem seu seroestado para <br>HIV (P+N+ID) à saida da consulta <br><em>&nbsp;(Col. 11 # casos novos ITS com teste HIV/ Col. 3- # casos novos ITS)</em></span>
+                                <span>2.2. % Novos casos ITS que conhecem seu seroestado para <br>HIV (P+N+ID) à saida da consulta <br><em>&nbsp;(Col. 11 # casos novos ITS com teste HIV/ Col. 3 - # casos novos ITS)</em></span>
                             </div>
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 90% dos novos <br>casos ITS</span>
@@ -309,7 +309,7 @@
                         </div>
                         <div class="ficha__grade-inf__linha --border-b-thick">
                             <div class="--display-flex-y-center --border-r-thick">
-                                <span>4.4. % Novos casos ITS aconselhados e testados <br>para Sífilis (P+N) <br><em>&nbsp;(Col. 12 - # casos novos ITS testados Sífilis/ Col. 3 - # casos novos Sífilis)</em></span>
+                                <span>4.4. % Novos casos ITS aconselhados e testados <br>para Sífilis (P+N) <br><em>&nbsp;(Col. 12 - # casos novos ITS testados Sífilis/ Col. 3 - # casos novos ITS)</em></span>
                             </div>
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 90% dos novos <br>casos ITS</span>
@@ -404,7 +404,21 @@
                             <input type="number" min="0" readonly class="p-l8">
                         </div>
                     </div>
-                    <div class="ficha__grade-inf__col2"></div>
+                    <div class="ficha__grade-inf__col2">
+                        <h3 class="grade-inf__col2__titulo"><u>PARÂMETROS</u> - Códigos</h3>
+                        <div class="grade-inf__col2__tabela grade-inf__col2__tabela--1 --border-thick">
+                            <div class="--display-flex-y-center --border-b-thick"><span><u>G - Gravidade</u> -</span></div>
+                            <div class="--display-flex-y-center --border-b-thick"><span>0 - Não existe problema</span></div>
+                            <div class="--display-flex-y-center"><span>1 - Existe um problema</span></div>
+                        </div>
+                        <div class="grade-inf__col2__tabela grade-inf__col2__tabela--2 --border-thick">
+                            <div class="--display-flex-y-center --border-b-thick"><span><u>R - A solução é realizável?</u> -</span></div>
+                            <div class="--display-flex-y-center --border-b-thick"><span>0 - Agora não precisa actução</span></div>
+                            <div class="--display-flex-y-center --border-b-thick"><span>1 - Solução é impossível agora</span></div>
+                            <div class="--display-flex-y-center --border-b-thick"><span>2 - Solução necessita de apoio da SPS/DPS</span></div>
+                            <div class="--display-flex-y-center"><span>3 - Solução é realizável com a equipe da US</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="layout-row layout-row--obs layout-row--no-padding --display-none">

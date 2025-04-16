@@ -28,7 +28,7 @@
     --greenyellow: #adff2f;
     --brown: brown;
     --reference-bgc: var(--blue--cobalt);
-    --layout-width: 1264px;
+    --layout-width: 1332px;
     --input-font-size: 15px;
 }
 @media print {
@@ -908,7 +908,7 @@ details[open] .details__summary {
 }
 @media print {
     @page {
-        margin: .5cm .5cm .4cm .5cm;
+        margin: .5cm;
         size: A4 landscape;
     }
     .--no-print {
