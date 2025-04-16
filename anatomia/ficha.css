@@ -5,13 +5,14 @@
 }
 .ficha {
     width: var(--layout-width);
-    margin: 30px auto 0;
+    margin: 30px auto;
     font-size: 13.5px;
     font-weight: 700;
 }
 @media print {
     .ficha {
         margin-top: 0;
+        margin-bottom: 0;
         color: var(--fullblack);
     }
 }
@@ -41,13 +42,14 @@
 .linha-de-prov-dist-us-e-ano {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    padding-left: 78px;
+    padding-left: 64px;
     margin-bottom: 5px;
     justify-items: flex-end;
 }
 .ficha__grade-sup {
     display: grid;
     grid-template-columns: 166px 1fr;
+    margin-bottom: 5px;
 }
 .ficha__grade-sup__col-1 {
     display: grid;
@@ -62,7 +64,7 @@
 }
 .ficha__grade-sup__linha-de-nums-de-cols {
     display: grid;
-    grid-template-columns: 45px calc(45px * 2) calc(42px * 2) calc(42px * 5) calc(42px * 10)  calc(42px * 5);
+    grid-template-columns: 54px calc(54px * 2) calc(45px * 2) calc(42px * 5) calc(42px * 10)  calc(42px * 5);
     background-color: var(--fullblack);
     height: 14px;
 }
@@ -74,7 +76,7 @@
 }
 .ficha__grade-sup__linha-de-titulos-das-cols {
     display: grid;
-    grid-template-columns: 45px calc(45px * 2) calc(42px * 2) repeat(3, calc(42px * 5))  calc(42px * 5);
+    grid-template-columns: 54px calc(54px * 2) calc(45px * 2) repeat(3, calc(42px * 5))  calc(42px * 5);
     grid-template-rows: repeat(3, 20px);
     text-align: center;
     text-transform: uppercase;
@@ -97,7 +99,7 @@
 .ficha__grade-sup__linha-de-faixas-etarias,
 .ficha__grade-sup__linha-de-inputs {
     display: grid;
-    grid-template-columns: repeat(3, 45px) repeat(22 ,42px);
+    grid-template-columns: repeat(3, 54px) repeat(2, 45px) repeat(20 ,42px);
     grid-template-rows: 30px;
 }
 .ficha__grade-sup__linha-de-faixas-etarias {
@@ -114,8 +116,8 @@
 }
 .ficha__grade-sup__linha-de-total-cu-ug-leucorreia {
     display: grid;
-    grid-template-columns: 45px calc(45px * 2) calc(42px * 2) repeat(3, calc(42px * 5))  calc(42px * 5);
-    grid-template-rows: repeat(2, 18px) 24px repeat(2, 18px);
+    grid-template-columns: 54px calc(54px * 2) calc(45px * 2) repeat(3, calc(42px * 5))  calc(42px * 5);
+    grid-template-rows: repeat(2, 20px) 24px repeat(2, 20px);
     text-transform: uppercase;
 }
 .rowspan-5 {
@@ -123,6 +125,43 @@
 }
 .rowspan-2 {
     grid-row: 1/3;
+}
+.ficha__grade-inf {
+    display: grid;
+    grid-template-columns: 968px 1fr;
+    grid-column-gap: 30px;
+}
+.ficha__grade-inf__header, 
+.ficha__grade-inf__linha {
+    display: grid;
+    grid-template-columns: calc(166px + 54px * 3)  calc(45px * 2) repeat(5, calc(42px * 2)) repeat(3, 42px);
+}
+.ficha__grade-inf__header {
+    grid-template-rows: repeat(3, 20px);
+    text-align: center;
+}
+.ficha__grade-inf__colspan-3 {
+    grid-column: 5/8;
+}
+.ficha__grade-inf__colspan-3--prioridade {
+    grid-column: 8/11;
+}
+.ficha__grade-inf__rowspan-3--tendencia {
+    grid-row: 2/4;
+    align-items: flex-end;
+}
+.ficha__grade-inf__linha {
+    font-size: 11px;
+}
+.ficha__grade-inf__linha > div:first-child {
+    padding: 5px 2px 5px 4px;
+}
+.ficha__grade-inf__linha span {
+    line-height: 1.3;
+}
+.ficha__grade-inf__linha > div:nth-child(2){
+    font-size: 10px;
+    text-align: center;
 }
 /*.ficha__grade-sup__col-2 {
     display: grid;

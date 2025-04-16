@@ -21,7 +21,9 @@
         <script src="fisiologia/main.js"></script>
         <script src="fisiologia/multifuncoes.js"></script>
         <script src="fisiologia/db.js"></script>
+        <!--
         <script src="fisiologia/referencia.js"></script>
+         -->
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYZXT38JF"></script>
         <script>
@@ -57,7 +59,7 @@
                             <label for="checkbox-realcar-totais" class="header__menu__label --display-flex-y-center --cursor-pointer">Realçar&nbsp;totais</label>
                         </li>
                         <li class="header__menu__li">
-                            <button class="header__menu__btn header__menu__btn--ir-para">Ir para a linha...</button>
+                            <button class="header__menu__btn header__menu__btn--ir-para --display-none">Ir para a linha...</button>
                         </li>
                         <li class="header__menu__li">
                             <button class="header__menu__btn header__menu__btn--esvaziar-ficha">Esvaziar ficha</button>
@@ -123,7 +125,7 @@
                     <div class="ficha__grade-sup__col-1 --border-r-thicker">
                         <div class="--border-b-thick"></div>
                         <div class="--display-flex-xy-center --border-b-thick">
-                            <span>Total</span>
+                            <span>TOTAL</span>
                         </div>
                         <div class="--display-flex-xy-center">
                             <span><u>TOTAL <br>de <br>UNIDADE SANITÁRIA</u></span>
@@ -191,30 +193,30 @@
                         </div>
                         <div class="ficha__grade-sup__linha-de-inputs">
                             <div class="celula-nao-aplicavel"></div>
-                            <input type="number" min="0" data-totalus="l1-c1c2" data-totalus="l2-c2" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c1c2" data-totalus="l2-c2" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c3c4" data-totalus="l2-c3" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c3c4" data-totalus="l2-c3" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c5-a-c9" data-totalus="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c5-a-c9" data-totalus="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c5-a-c9" data-totalus="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c5-a-c9" data-totalus="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c5-a-c9" data-totalus="l2-c4" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c10-a-c14" data-totalus="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c10-a-c14" data-totalus="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c10-a-c14" data-totalus="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c10-a-c14" data-totalus="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c10-a-c14" data-totalus="l2-c5" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c14-c19" data-totalus="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c14-c19" data-totalus="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c14-c19" data-totalus="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c14-c19" data-totalus="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c14-c19" data-totalus="l2-c6" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c20-l24" data-totalus="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c20-l24" data-totalus="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c20-l24" data-totalus="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c20-l24" data-totalus="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-totalus="l1-c20-l24" data-totalus="l2-c7" class="--border-b-thick">
+                            <input type="number" min="0" data-total="l1-c1c2" totaloutput="l2-c2" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c1c2" totaloutput="l2-c2" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c3c4" totaloutput="l2-c3" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c3c4" totaloutput="l2-c3" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-b-thick">
                         </div>
                         <div class="ficha__grade-sup__linha-de-total-cu-ug-leucorreia">
                             <input type="number" readonly class="l2-c1 rowspan-5 --border-r-thicker">
@@ -234,8 +236,178 @@
                         </div>
                     </div>
                 </div>
+                <div class="ficha__grade-inf">
+                    <div class="ficha__grade-inf__col1 --border-thick --border-t-thicker">
+                        <div class="ficha__grade-inf__header --border-b-thick">
+                            <div class="rowspan-3 --border-r-thick">
+                                <span class="line-height-gt-1">Análise mensal dos indicadores <br>na Unidade Sanitária <br>
+                                    <svg style="width: 12px; height: 16px; display: inline-block; margin-left: 22px">
+                                        <line x1="6" x2="6" y1="0" y2="10" stroke="black" stroke-width="3"></line>
+                                        <polygon points="0,10 12,10 6,16"></polygon>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="rowspan-3 --display-flex-xy-center --border-r-thick"><span>Padrão</span></div>
+                            <div class="rowspan-3 --display-flex-xy-center --border-r-thick"><span class="line-height-gt-1">Último <br>Mês</span></div>
+                            <div class="rowspan-3 --display-flex-xy-center --border-r-thick"><span class="line-height-gt-1">Mês <br>Actual</span></div>
+                            <div class="ficha__grade-inf__colspan-3 --display-flex-xy-center --border-r-thick --border-b-thick"><span>Compare último mês com actual</span></div>
+                            <div class="ficha__grade-inf__colspan-3--prioridade --display-flex-xy-center --border-b-thick"><span>Prioridade (P)</span></div>
+                            <div class="ficha__grade-inf__rowspan-3--tendencia --display-flex-xy-center --border-r-thick">
+                                <span>Aumentou<br>
+                                    <svg style="width: 12px; height: 20px; transform: rotate(-128deg)">
+                                        <line x1="6" x2="6" y1="0" y2="14" stroke="black" stroke-width="3"></line>
+                                        <polygon points="0,14 12,14 6,20"></polygon>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="ficha__grade-inf__rowspan-3--tendencia --display-flex-xy-center --border-r-thick"><span>Estacionário<br>
+                                <svg style="width: 12px; height: 20px; transform: rotate(-90deg)">
+                                    <line x1="6" x2="6" y1="0" y2="14" stroke="black" stroke-width="3"></line>
+                                    <polygon points="0,14 12,14 6,20"></polygon>
+                                </svg></span></div>
+                            <div class="ficha__grade-inf__rowspan-3--tendencia --display-flex-xy-center --border-r-thick"><span>Diminuiu<br>
+                                <svg style="width: 12px; height: 20px; transform: rotate(-64deg)">
+                                    <line x1="6" x2="6" y1="0" y2="14" stroke="black" stroke-width="3"></line>
+                                    <polygon points="0,14 12,14 6,20"></polygon>
+                                </svg></span></div>
+                            <div class="ficha__grade-inf__colspan-3--prioridade --display-flex-xy-center --border-b-thick"><span>(G + R = P)</span></div>
+                            <div class="--display-flex-xy-center --border-r-thick"><span>G</span></div>
+                            <div class="--display-flex-xy-center --border-r-thick"><span>R</span></div>
+                            <div class="--display-flex-xy-center"><span>P</span></div>
+                        </div>
+                        <div class="ficha__grade-inf__linha --border-b-thick">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>1.1. N.º novos casos ITS diagnosticados e tratados <br><i>&nbsp;(Coluna 3)</i></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>Meta mensal DPS</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l1" data-totaloutput="p-l1" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l1" data-totaloutput="p-l1" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l1">
+                        </div>
+                        <div class="ficha__grade-inf__linha --border-b-thick">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>2.2. % Novos casos ITS que conhecem seu seroestado para <br>HIV (P+N+ID) à saida da consulta <br><em>&nbsp;(Col. 11 # casos novos ITS com teste HIV/ Col. 3- # casos novos ITS)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>&gt; 90% dos novos <br>casos ITS</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l2" data-totaloutput="p-l2" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l2" data-totaloutput="p-l2" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l2">
+                        </div>
+                        <div class="ficha__grade-inf__linha --border-b-thick">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>4.4. % Novos casos ITS aconselhados e testados <br>para Sífilis (P+N) <br><em>&nbsp;(Col. 12 - # casos novos ITS testados Sífilis/ Col. 3 - # casos novos Sífilis)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>&gt; 90% dos novos <br>casos ITS</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l3" data-totaloutput="p-l3" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l3" data-totaloutput="p-l3" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l3">
+                        </div>
+                        <div class="ficha__grade-inf__linha --border-b-thick">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>3.1. N.º médio de convites entregues a partir de um novo <br>caso ITS que é caso índice <br><em>&nbsp;(Col. 13- # convites entregues / Col. 4 - # casos índices)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>&gt; 1 convite / <br>caso índice</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l4" data-totaloutput="p-l4" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l4" data-totaloutput="p-l4" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l4">
+                        </div>
+                        <div class="ficha__grade-inf__linha --border-b-thick">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>3.2. N.º médio de contactos tratados a partir de um novo <br>caso ITS que é caso índice <br><em>&nbsp;(Col. 4- # contactos tratados / Col. 4 - # casos índices)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>&gt; 1 contacto / <br>caso índice</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l5" data-totaloutput="p-l5" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l5" data-totaloutput="p-l5" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l5">
+                        </div>
+                        <div class="ficha__grade-inf__linha --border-b-thick">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>4.1. % Novos casos ITS diagnosticados e tratados <br><em>(<u>1.ª cons.</u> - Col. 3 - # novos casos/<u>Todas cons.</u> - Col. 5- # total casos ITS)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>&gt; 90%</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l6" data-totaloutput="p-l6" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l6" data-totaloutput="p-l6" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l6">
+                        </div>
+                        <div class="ficha__grade-inf__linha">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>4.5. % Novos casos de ITS identificados como <br>pertencendo a populações chave <br><em>&nbsp;(Col. 10 - # Pop. chave - Pertence (S) / Col. 3 - # casos novos ITS)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>Sem padrão</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l7" data-totaloutput="p-l7" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l7" data-totaloutput="p-l7" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l7">
+                        </div>
+                        <div class="ficha__grade-inf__linha">
+                            <div class="--display-flex-y-center --border-r-thick">
+                                <span>4.6. % PVHIV rastreadas para ITS a cada consulta clínica <br><em>&nbsp;(# PVHIV rastreadas para ITS nas consultas / # consultas PVHIV)</em></span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-r-thick">
+                                <span>= 100%</span>
+                            </div>
+                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="--border-r-thick">
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <input type="number" min="0" data-total="gr-l8" data-totaloutput="p-l8" class="--border-r-thick">
+                            <input type="number" min="0" data-total="gr-l8" data-totaloutput="p-l8" class="--border-r-thick">
+                            <input type="number" min="0" readonly class="p-l8">
+                        </div>
+                    </div>
+                    <div class="ficha__grade-inf__col2"></div>
+                </div>
             </div>
-            <div class="layout-row layout-row--obs layout-row--no-padding">
+            <div class="layout-row layout-row--obs layout-row--no-padding --display-none">
                 <span class="obs__label --fw-700">Observações:</span>
                 <p contenteditable="true" id="input-obs" class="obs__input"></p>
             </div>
@@ -584,7 +756,7 @@
                 <p class="footer__p footer__p--created-by">Criado com atenção e <span class="footer__p__heart">❤</span> por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;">Adérito Félix Quinamine</a> | ©&nbsp;<span class="footer__current-year"></span> Totalizador de Resumo Mensal de ITS</p>
                 <a href=#root class=footer__link--back-to-top>Rolar para o topo</a>
             </div>
-            <p class="footer__p footer__p--available-since">Disponível desde <time datetime="2025-01-13">13/01/2025</time>.</p>
+            <p class="footer__p footer__p--available-since">Disponível desde <time datetime="2025-04-16">16/04/2025</time>.</p>
         </footer>
         <div class="desfoque"></div>
         <script src="fisiologia/festasfelizes.js"></script>

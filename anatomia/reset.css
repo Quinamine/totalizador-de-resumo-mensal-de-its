@@ -76,6 +76,9 @@ img {
     display: block;
     max-width: 100%;
 }
+i, em {
+    font-style: italic;
+}
 ::selection {
     background-color: var(--gray--d);
     color: var(--fullblack)
