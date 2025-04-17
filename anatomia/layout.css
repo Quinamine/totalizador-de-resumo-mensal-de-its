@@ -889,6 +889,9 @@ details[open] .details__summary {
 .--border-l-thicker {
     border-left: 3px solid var(--fullblack);
 }
+.--border-thicker-plus {
+    border-width: 7px;
+}
 .--fw-700 {
     font-weight: bold;
 }

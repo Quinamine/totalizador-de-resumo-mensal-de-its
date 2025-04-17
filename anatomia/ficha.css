@@ -33,7 +33,7 @@
     justify-self: center;
 }
 .ficha__titulo {
-    font-size: 18.3px;
+    font-size: 19.33px;
 }
 .ficha__mod-sis-h22-d {
     font-size: 11px;
@@ -187,8 +187,103 @@
     padding-left: 4px;
     font-size: 12px;
 }
-
-/*.ficha__grade-sup__col-2 {
+/* VERSO */
+.ficha-verso__linha-1 {
+    display: grid;
+    grid-template-columns: 184px calc(23 * 42px) calc(88px + 42px * 2);
+}
+.ficha-verso__linha__col-de-titulo {
+    grid-column: 2/3;
+}
+.ficha-verso__col2-da-grade-sup__linha-de-titulo {
+    margin-left: 4px;
+}
+.ficha__grade-sup__titulo--fs-small {
+    text-align: center;
+    font-size: 13px !important;
+}
+.ficha-verso__linha-2 {
+    display: grid;
+    grid-template-columns: 184px calc(42px * 13) calc(42px * 4) repeat(2, calc(42px * 3)) 88px calc(42px * 2);
+}
+.ficha-verso__linha-2__col2 {
+    display: grid;
+    grid-template-rows: 14px repeat(2, 20px) repeat(2, 42px);
+}
+.ficha-verso__linha-2__num-de-col {
+    background-color: var(--fullblack);
+    border-color: var(--yt);
+    color: var(--yt);
+    font-size: 11px;
+}
+.ficha-verso__linha-2__titulos-pertence-e-subgrupos {
+    display: grid;
+    grid-template-columns: calc(42px * 4) 1fr;
+}
+.ficha-verso__linha-2__sexo-e-pc {
+    display: grid;
+    grid-template-columns: repeat(3, calc(42px * 2)) 42px repeat(3, calc(42px * 2));
+}
+.ficha-verso__linha-2__sexo-e-pc div,
+ficha-verso__linha-2__s-n-e-sexo div {
+    position: relative;
+}
+.ficha-verso__linha-2__sexo-e-pc abbr,
+.ficha-verso__linha-2__s-n-e-sexo span {
+    transform: rotate(-90deg);
+}
+.ficha-verso__linha-2__s-n-e-sexo {
+    display: grid;
+    grid-template-columns: repeat(13, 42px);
+    font-size: 12.5px;
+}
+.ficha-verso__linha-2__resultados-de-hiv {
+    display: grid;
+    grid-template-columns: repeat(4, 42px);
+}
+.ficha-verso__linha-2__grid-template-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 42px);
+}
+.ficha-verso__linha-2__grid-template-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 42px);
+}
+.ficha-verso__linha-2__col3,
+.ficha-verso__linha-2__col4,
+.ficha-verso__linha-2__col6,
+.ficha-verso__linha-2__col7 {
+    display: grid;
+    grid-template-rows: 14px calc(20px * 2 + 42px);
+    text-align: center;
+}
+.ficha-verso__linha-2__col5 {
+    display: grid;
+    grid-template-rows: 14px 20px auto;
+    text-align: center;
+}
+.ficha-verso__linha-2__rowspan-2 {
+    grid-row: 1/3;
+}
+.ficha-verso__linha-2__meios-de-prevencao {
+    display: grid;
+    grid-template-rows: calc(20px + 42px) 42px;
+}
+.ficha-verso__linha-2__col6 {
+    margin-left: 4px;
+}
+.ficha-verso__linha-2__sexos-da-ultima-col {
+    display: grid;
+    grid-template-columns: repeat(2, 42px);
+}
+/*
+.ficha__grade-sup__linha-de-titulo--verso {
+    margin-left: -2px;
+}
+.ficha__grade-sup__linha-de-nums-de-cols--verso {
+    grid-template-columns: calc(42px * 13) calc(42px * 4) repeat(2, calc(42px * 3));
+}
+.ficha__grade-sup__col-2 {
     display: grid;
     grid-template-columns: 55px repeat(2, 50px) repeat(20, 45px)
 }*/
