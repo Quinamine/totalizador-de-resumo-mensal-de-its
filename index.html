@@ -454,7 +454,7 @@
                     </div>
                 </div>
                 <div class="ficha-verso__linha-2">
-                    <div class="ficha-verso__linha-2__col1 --border-l-thicker --border-t-thicker --border-r --border-b-thick"></div>
+                    <div class="ficha-verso__linha-2__col1 --border-l-thicker --border-t-thicker --border-r-thicker --border-b-thick"></div>
                     <div class="ficha-verso__linha-2__col2 --border-b-thick">
                         <div class="ficha-verso__linha-2__num-de-col --display-flex-xy-center --border-r-thicker"><span>10</span></div>
                         <div class="ficha-verso__linha-2__titulo-pc --display-flex-xy-center --border-r-thicker --border-b"><span>POPULAÇÃO CHAVE</span></div>
@@ -518,7 +518,7 @@
                         </div>
                     </div>
                     <div class="ficha-verso__linha-2__col6 --border-l-thicker --border-b-thick">
-                        <div class="ficha-verso__linha-2__num-de-col --display-flex-xy-center --border-r-thick"><span>5</span></div>
+                        <div class="ficha-verso__linha-2__num-de-col --display-flex-xy-centerr"><span>5</span></div>
                         <div class="--display-flex-xy-center --border-b --border-r-thicker"><span>SEXO</span></div>
                         <div class="ficha-verso__linha-2__sexos-da-ultima-col">
                             <div class="--display-flex-xy-center --border-r"><span>M</span></div>
@@ -526,7 +526,7 @@
                         </div>
                     </div>
                     <div class="ficha-verso__linha-2__col7 --border-r-thicker --border-b-thick">
-                        <div class="ficha-verso__linha-2__num-de-col --display-flex-xy-center"><span>10</span></div>
+                        <div class="ficha-verso__linha-2__num-de-col --display-flex-xy-center --border-l-thicker"><span>10</span></div>
                         <div class="--display-flex-xy-center --border-b"><span class="line-height-gt-1">Pertence <br>População <br>Chave <br>(S)</span></div>
                         <div class="ficha-verso__linha-2__sexos-da-ultima-col">
                             <div class="--display-flex-xy-center --border-r"><span>M</span></div>
@@ -535,7 +535,7 @@
                     </div>
                 </div>
                 <div class="ficha-verso__linha-3">
-                    <div class="--display-flex-xy-center --border-b-thick --border-r --border-l-thicker"><span>TOTAL</span></div>
+                    <div class="--display-flex-xy-center --border-b-thick --border-r-thicker --border-l-thicker"><span>TOTAL</span></div>
                     <input type="number" min="0" data-total="fvl1-c1-a-c4" data-totaloutput="fvl2-c1" class="--border-r --border-b-thick">
                     <input type="number" min="0" data-total="fvl1-c1-a-c4" data-totaloutput="fvl2-c1" class="--border-r --border-b-thick">
                     <input type="number" min="0" data-total="fvl1-c1-a-c4" data-totaloutput="fvl2-c1" class="--border-r --border-b-thick">
@@ -567,7 +567,7 @@
                     <input type="number" min="0" data-total="fvl1-c26c27" data-totaloutput="fvl2-c7" class="--border-r-thicker --border-b-thick">
                 </div>
                 <div class="ficha-verso__linha-4">
-                    <div class="--display-flex-xy-center --border-b-thicker --border-r --border-l-thicker"><span class="line-height-gt-1">TOTAL da <br>UNIDADE SANITÁRIA</span></div>
+                    <div class="--display-flex-xy-center --border-b-thicker --border-r-thicker --border-l-thicker"><span class="line-height-gt-1">TOTAL da <br>UNIDADE SANITÁRIA</span></div>
                     <input type="number" min="0" readonly class="fvl2-c1 --border-r-thicker --border-thicker-plus --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c2 --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c3 --border-r-thicker --border-b-thicker">
@@ -577,6 +577,14 @@
                     <input type="number" min="0" readonly class="fvl2-c7 --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c8 --border-l-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c9 --border-l-thicker --border-r-thicker --border-b-thicker">
+                </div>
+                <div class="ficha-verso__linha-de-obs --border-thicker">
+                    <label class="ficha-verso__linha-de-obs__label" for="textarea">Observações: Transcrever as justificações dos erros que estão registadas nas "Observações" da folha de preparação <u>FINAL</u>;</label>
+                    <textarea cols="30" rows="4" class="ficha-verso__linha-de-obs__textarea" id="textarea"></textarea>
+                    <div class="ficha-verso__linha-de-obs__num-justificacoes --display-flex-y-center --border-l-thick --border-t-thick">
+                        <label for="num-justificacoes" class="--display-flex-xy-center">NÚMERO TOTAL de JUSTIFICAÇÕES REGISTADAS</label>
+                        <input type="number" min="0" id="num-justificacoes" class="ficha-verso__linha-de-obs__input --border-l-thick">
+                    </div>
                 </div>
             </div>
             <div class="layout-row layout-row--obs layout-row--no-padding --display-none">
