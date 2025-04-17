@@ -206,6 +206,9 @@
     display: grid;
     grid-template-columns: 184px calc(42px * 13) calc(42px * 4) repeat(2, calc(42px * 3)) 88px calc(42px * 2);
 }
+.ficha-verso__linha-2__col1 {
+    margin-top: -2px;
+} 
 .ficha-verso__linha-2__col2 {
     display: grid;
     grid-template-rows: 14px repeat(2, 20px) repeat(2, 42px);
@@ -269,12 +272,34 @@ ficha-verso__linha-2__s-n-e-sexo div {
     display: grid;
     grid-template-rows: calc(20px + 42px) 42px;
 }
-.ficha-verso__linha-2__col6 {
+.ficha-verso__linha-2__col6,
+.ficha-verso__linha-3__col-com-margin-l {
     margin-left: 4px;
 }
-.ficha-verso__linha-2__sexos-da-ultima-col {
+.ficha-verso__linha-2__sexos-da-ultima-col,
+.ficha-verso__linha-3__col-com-margin-l {
     display: grid;
     grid-template-columns: repeat(2, 42px);
+}
+.ficha-verso__linha-3 {
+    display: grid;
+    grid-template-columns: 184px repeat(23, 42px) 88px repeat(2, 42px);
+    grid-template-rows: 50px;
+}
+.ficha-verso__linha-3 input:nth-child(5) {
+    border-bottom: 2px solid var(--cor-de-borda);
+}
+.ficha-verso__linha-4 {
+    display: grid;
+    grid-template-columns: 184px calc(42px * 4) calc(42px * 9) calc(42px * 4) calc(42px * 3) repeat(3, 42px) 88px calc(42px * 2);
+    grid-template-rows: 50px;
+    text-align: center;
+}
+.fvl2-c1 {
+    border-bottom-width: 3px;
+}
+.fvl2-c8 {
+    margin-left: 4px;
 }
 /*
 .ficha__grade-sup__linha-de-titulo--verso {
