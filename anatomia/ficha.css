@@ -408,6 +408,42 @@ ficha-verso__linha-2__s-n-e-sexo div {
 .seccao-validacao__tabela__linha label {
     padding-left: 4px;
 }
+.ficha__rodape {
+    display: grid;
+    grid-template-columns: 645px 656px;
+    grid-column-gap: 21px;
+    margin-top: 4px;
+}
+.ficha__rodape__col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18px 1fr;
+}
+.ficha__rodape__col--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.ficha__rodape__col-elaborado-por {
+    grid-column: 1/3;
+    text-align: center;
+}
+.ficha__rodape__col-validado-por {
+    grid-column: 1/4;
+}
+.ficha__rodape__col-nome,
+.ficha__rodape__col-assinatura,
+.ficha__rodape__col-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.ficha__rodape input {
+    text-align: center;
+}
+
+
 /*
 .ficha__grade-sup__linha-de-titulo--verso {
     margin-left: -2px;
