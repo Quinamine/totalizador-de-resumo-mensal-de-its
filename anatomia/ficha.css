@@ -18,7 +18,8 @@
         page-break-before: always;
     }
 }
-.ficha .line-height-gt-1 {
+.ficha .line-height-gt-1,
+.linha-de-emblema-e-titulo__descricao-de-emblema span {
     line-height: 1.2;
 }
 .linha-de-emblema-e-titulo {

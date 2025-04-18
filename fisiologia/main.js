@@ -31,6 +31,13 @@ const totalizador = {
             celulaDeSaida = document.querySelector(`.${inputTarget.dataset.totalsindromesoutput}`);
             celulaDeSaida.value = this.somar(operandos);
         }
+        if(inputTarget.dataset.validacao) {
+            classNameDosOperandos = inputTarget.dataset.validacao;
+            inputTarget.classList.add(`${classNameDosOperandos}`);  
+            operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            celulaDeSaida = document.querySelector(`.${inputTarget.dataset.validacaooutput}`);
+            celulaDeSaida.value = this.somar(operandos);
+        }
     },
     somar(celulasPorTotalizar) {
         let soma = 0;
