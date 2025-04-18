@@ -60,6 +60,9 @@ input[type=number] {
 input[type=checkbox] {
     cursor: pointer;
 }
+input::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
 button {
     border: none;
     outline: 0;
