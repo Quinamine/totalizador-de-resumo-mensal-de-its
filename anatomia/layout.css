@@ -29,7 +29,7 @@
     --brown: brown;
     --reference-bgc: var(--blue--cobalt);
     --layout-width: 1332px;
-    --input-font-size: 15px;
+    --input-font-size: 14px;
 }
 @media print {
     :root {

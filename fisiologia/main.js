@@ -11,13 +11,10 @@ const backup = {
     },
     saveExtraInputs() {
         const inputsNaoCelulares = document.querySelectorAll(".input-nao-celular");
-        const campoDeObs = document.querySelector(".obs__input");
         inputsNaoCelulares.forEach( inputTarget => {
             inputTarget.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-${inputTarget.id}`, inputTarget.value));
             inputTarget.value = localStorage.getItem(`${keyPrefix}-${inputTarget.id}`);
         });
-        campoDeObs.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-input-obs`, campoDeObs.textContent));
-        campoDeObs.textContent = localStorage.getItem(`${keyPrefix}-input-obs`);
     }
 }
 const totalizador = {
@@ -27,6 +24,13 @@ const totalizador = {
         let operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
         let celulaDeSaida = document.querySelector(`.${inputTarget.dataset.totaloutput}`);
         celulaDeSaida.value = this.somar(operandos);
+        if(inputTarget.dataset.totalsindromes) {
+            classNameDosOperandos = inputTarget.dataset.totalsindromes;
+            inputTarget.classList.add(`${classNameDosOperandos}`);  
+            operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            celulaDeSaida = document.querySelector(`.${inputTarget.dataset.totalsindromesoutput}`);
+            celulaDeSaida.value = this.somar(operandos);
+        }
     },
     somar(celulasPorTotalizar) {
         let soma = 0;

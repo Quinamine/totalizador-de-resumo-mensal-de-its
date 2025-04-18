@@ -104,20 +104,24 @@
                     </div>
                     <div class="linha-de-prov-dist-us-e-ano">
                         <div class="linha-de-prov-dist-us-e-ano__col">
-                            <label for="prov">Província</label>
-                            <input type="text" id="prov" class="input-nao-celular --border-b">
+                            <label for="input-provincia">Província</label>
+                            <input type="text" id="input-provincia" list="datalist-provincias" class="input-nao-celular --border-b">
+                            <datalist id="datalist-provincias"></datalist>
                         </div>
                         <div class="linha-de-prov-dist-us-e-ano__col">
-                            <label for="distrito">Distrito</label>
-                            <input type="text" id="distrito" class="input-nao-celular --border-b">
+                            <label for="input-distrito">Distrito</label>
+                            <input type="text" id="input-distrito" list="datalist-distritos"  class="input-nao-celular --border-b">
+                            <datalist id="datalist-distritos"></datalist>
                         </div>
                         <div class="linha-de-prov-dist-us-e-ano__col">
-                            <label for="us">Nome US</label>
-                            <input type="text" id="us" class="input-nao-celular --border-b">
+                            <label for="input-us">Nome US</label>
+                            <input type="text" id="input-us" list="datalist-us"  class="input-nao-celular --border-b">
+                            <datalist id="datalist-us"></datalist>
                         </div>
                         <div class="linha-de-prov-dist-us-e-ano__col">
-                            <label for="mes-ano">Mês/Ano</label>
-                            <input type="text" id="mes-ano" class="input-nao-celular --border-b">
+                            <label for="input-mes-ano">Mês/Ano</label>
+                            <input type="text" id="input-mes-ano" list="datalist-mes-ano"  class="input-nao-celular --border-b">
+                            <datalist id="datalist-mes-ano"></datalist>
                         </div>
                     </div>
                 </header>
@@ -193,33 +197,33 @@
                         </div>
                         <div class="ficha__grade-sup__linha-de-inputs">
                             <div class="celula-nao-aplicavel"></div>
-                            <input type="number" min="0" data-total="l1-c1c2" totaloutput="l2-c2" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c1c2" totaloutput="l2-c2" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c3c4" totaloutput="l2-c3" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c3c4" totaloutput="l2-c3" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c5-a-c9" totaloutput="l2-c4" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c10-a-c14" totaloutput="l2-c5" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c14-c19" totaloutput="l2-c6" class="--border-r-thicker --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-r --border-b-thick">
-                            <input type="number" min="0" data-total="l1-c20-l24" totaloutput="l2-c7" class="--border-b-thick">
+                            <input type="number" min="0" data-total="l1-c1c2" data-totaloutput="l2-c2" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c1c2" data-totaloutput="l2-c2" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c3c4" data-totaloutput="l2-c3" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c3c4" data-totaloutput="l2-c3" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" data-totaloutput="l2-c4" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" data-totaloutput="l2-c4" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" data-totaloutput="l2-c4" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" data-totaloutput="l2-c4" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c5-a-c9" data-totaloutput="l2-c4" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" data-totaloutput="l2-c5" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" data-totaloutput="l2-c5" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" data-totaloutput="l2-c5" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" data-totaloutput="l2-c5" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c10-a-c14" data-totaloutput="l2-c5" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" data-totaloutput="l2-c6" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" data-totaloutput="l2-c6" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" data-totaloutput="l2-c6" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" data-totaloutput="l2-c6" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c14-c19" data-totaloutput="l2-c6" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r-thicker --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" data-totaloutput="l2-c7" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" data-totaloutput="l2-c7" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" data-totaloutput="l2-c7" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" data-totaloutput="l2-c7" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-r --border-b-thick">
+                            <input type="number" min="0" data-total="l1-c20-l24" data-totaloutput="l2-c7" data-totalsindromes="l1-c6-a-c25" data-totalsindromesoutput="l3-c1" class="--border-b-thick">
                         </div>
                         <div class="ficha__grade-sup__linha-de-total-cu-ug-leucorreia">
-                            <input type="number" readonly class="l2-c1 rowspan-5 --border-r-thicker">
+                            <input type="number" class="l2-c1 rowspan-5 input-celular--focus --border-r-thicker --fw-700">
                             <input type="number" readonly class="l2-c2 rowspan-5 --border-r-thicker">
                             <input type="number" readonly class="l2-c3 rowspan-5 --border-r-thicker">
                             <div class="rowspan-2 --display-flex-xy-center --border-r-thicker"><span>Corrimento Uretral</span></div>
@@ -282,8 +286,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>Meta mensal DPS</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -298,8 +302,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 90% dos novos <br>casos ITS</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -314,8 +318,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 90% dos novos <br>casos ITS</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -330,8 +334,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 1 convite / <br>caso índice</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -346,8 +350,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 1 contacto / <br>caso índice</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -362,8 +366,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>&gt; 90%</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -378,8 +382,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>Sem padrão</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -394,8 +398,8 @@
                             <div class="--display-flex-xy-center --border-r-thick">
                                 <span>= 100%</span>
                             </div>
-                            <input type="number" min="0" class="--border-r-thick">
-                            <input type="number" min="0" class="--border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
+                            <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
                             <div class="--display-flex-xy-center --border-r-thick"></div>
@@ -570,11 +574,11 @@
                     <div class="celula-nao-aplicavel --border-r --border-b-thick"></div>
                     <div class="celula-nao-aplicavel --border-r-thicker --border-r-thicker --border-b-thick"></div>
                     <div class="ficha-verso__linha-3__col-com-margin-l --border-l-thicker --border-b-thick">
-                        <input type="number" min="0" data-total="fvl1-c24c25" data-totaloutput="fvl2-c6" class="--border-r">
-                        <input type="number" min="0" data-total="fvl1-c24c25" data-totaloutput="fvl2-c6">
+                        <input type="number" min="0" data-total="fvl1-c24c25" data-totaloutput="fvl2-c8" class="--border-r">
+                        <input type="number" min="0" data-total="fvl1-c24c25" data-totaloutput="fvl2-c8">
                     </div>
-                    <input type="number" min="0" data-total="fvl1-c26c27" data-totaloutput="fvl2-c7" class="--border-r --border-l-thicker --border-b-thick">
-                    <input type="number" min="0" data-total="fvl1-c26c27" data-totaloutput="fvl2-c7" class="--border-r-thicker --border-b-thick">
+                    <input type="number" min="0" data-total="fvl1-c26c27" data-totaloutput="fvl2-c9" class="--border-r --border-l-thicker --border-b-thick">
+                    <input type="number" min="0" data-total="fvl1-c26c27" data-totaloutput="fvl2-c9" class="--border-r-thicker --border-b-thick">
                 </div>
                 <div class="ficha-verso__linha-4">
                     <div class="--display-flex-xy-center --border-b-thicker --border-r-thicker --border-l-thicker"><span class="line-height-gt-1">TOTAL da <br>UNIDADE SANITÁRIA</span></div>
@@ -582,27 +586,27 @@
                     <input type="number" min="0" readonly class="fvl2-c2 --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c3 --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c4 --border-r-thicker --border-b-thicker">
-                    <input type="number" min="0" readonly class="fvl2-c5 --border-r --border-b-thicker">
-                    <input type="number" min="0" readonly class="fvl2-c6 --border-r --border-b-thicker">
-                    <input type="number" min="0" readonly class="fvl2-c7 --border-r-thicker --border-b-thicker">
+                    <input type="number" min="0" class="fvl2-c5 input-celular--focus --border-r --border-b-thicker">
+                    <input type="number" min="0" class="fvl2-c6 input-celular--focus --border-r --border-b-thicker">
+                    <input type="number" min="0" class="fvl2-c7 input-celular--focus --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c8 --border-l-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c9 --border-l-thicker --border-r-thicker --border-b-thicker">
                 </div>
                 <div class="ficha-verso__seccao-observacoes --border-thicker">
                     <label class="ficha-verso__seccao-observacoes__label" for="textarea">Observações: Transcrever as justificações dos erros que estão registadas nas "Observações" da folha de preparação <u>FINAL</u>;</label>
-                    <textarea cols="30" rows="3" class="ficha-verso__seccao-observacoes__textarea" id="textarea"></textarea>
+                    <textarea cols="30" rows="3" class="ficha-verso__seccao-observacoes__textarea input-celular--focus" id="textarea"></textarea>
                     <div class="ficha-verso__seccao-observacoes__num-justificacoes --display-flex-y-center --border-l-thick --border-t-thick">
                         <label for="num-justificacoes" class="--display-flex-xy-center">NÚMERO TOTAL de JUSTIFICAÇÕES REGISTADAS</label>
-                        <input type="number" min="0" id="num-justificacoes" class="ficha-verso__seccao-observacoes__input --border-l-thick">
+                        <input type="number" min="0" id="num-justificacoes" class="ficha-verso__seccao-observacoes__input input-celular--focus --border-l-thick">
                     </div>
                 </div>
                 <div class="ficha-verso__linha-consulta-ct --border-thicker">
                     <div class="--display-flex-xy-center --border-r-thick"><span>Consulta Cuidados e Tratamento PVHIV</span></div>
                     <div class="--display-flex-xy-center --border-r-thick"><span>RASTREIO ITS nas consultas das PVHIV</span></div>
-                    <label for="consultas-de-pvhiv" class="--display-flex-y-center --border-r-thick" >Total consultas</label>
-                    <input type="number" min="0" id="consultas-de-pvhiv" class="--border-r-thick">
+                    <label for="consultas-de-pvhiv" class="input-celular--focus --display-flex-y-center --border-r-thick" >Total consultas</label>
+                    <input type="number" min="0" id="consultas-de-pvhiv" class="input-celular--focus --border-r-thick">
                     <label for="rastreio-de-pvhiv" class="--display-flex-y-center --border-r-thick">Total consultas com Rstreio ITS</label>
-                    <input type="number" min="0" id="rastreio-de-pvhiv" class="--display-flex-xy-center">
+                    <input type="number" min="0" id="rastreio-de-pvhiv" class="input-celular--focus --display-flex-xy-center">
                 </div>
                 <div class="ficha-verso__seccao-control-de-qualidade --border-thicker">
                     <div class="ficha-verso__seccao-control-de-qualidade__linha --border-b-thick">
@@ -611,17 +615,17 @@
                     </div>
                     <div class="ficha-verso__seccao-control-de-qualidade__linha --border-b">
                         <p class="--border-r-thick --display-flex-y-center">1. Transcrição da Folha de Preparação&nbsp;<u>FINAL</u>&nbsp;para o Resumo Mensal - fez uma segunda verificação para certificar que não houve nenhum engano?</p>
-                        <input type="text" class="input-celular" list="lista-de-sim">
+                        <input type="text" class="input-celular--focus" list="lista-de-sim">
                     </div>
                     <div class="ficha-verso__seccao-control-de-qualidade__linha">
                         <p class="--border-r-thick --display-flex-y-center">2. Finalizou o "TOTAL da UNIDADE SANITÁRIA" (frente e verso) - repetiu o somatórios das colunas para certificar que as somas estavam correctas?</p>
-                        <input type="text" class="input-celular" list="lista-de-sim">
+                        <input type="text" class="input-celular--focus" list="lista-de-sim">
                     </div>
                     <datalist id="lista-de-sim"><option value="SIM"></option></datalist>
                 </div>
                 <div class="ficha-verso__seccao-validacao --border-thicker">
                     <div class="--border-b-thick">
-                        <h2 class="ficha-verso__seccao-validacao__titulo --display-flex-xy-center"><u>CONFIRMAÇÃO (Validação) do Resumo Mensal</u> - "Do TOTAL - Apenas as 1.ª Consultas"</h2>
+                        <h2 class="ficha-verso__seccao-validacao__titulo --display-flex-xy-center"><u>CONFIRMAÇÃO (Validação) do Resumo Mensal</u>&nbsp;- "Do TOTAL - Apenas as 1.ª Consultas"</h2>
                         <p>Localizar os erros e corrigir, quando for possível. Se não é possível corrigir o erro, registar a justificação nas "Observações".</p>
                     </div>
                     <div class="ficha-verso__seccao-validacao__tabelas">
@@ -633,26 +637,26 @@
                             <div class="seccao-validacao__tabela__linha --border-b">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 3</span></div>
                                 <label class="--display-flex-y-center --border-r-thick">1.ª Consulta</label>
-                                <input type="number" min="0" class="--border-r-thick">
+                                <input type="number" min="0" class="input-celular--focus --border-r-thick">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 10</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>População chave - <br>Pertence</span></div>
-                                <input type="number" min="0">
+                                <input type="number" min="0" class="input-celular--focus">
                             </div>
                             <div class="seccao-validacao__tabela__linha --border-b">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 4</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>Caso índice/<br>Contacto</span></div>
-                                <input type="number" min="0" class="--border-r-thick">
+                                <input type="number" min="0" class="input-celular--focus --border-r-thick">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 11</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>Resultado teste HIV</span></div>
-                                <input type="number" min="0">
+                                <input type="number" min="0" class="input-celular--focus">
                             </div>
                             <div class="seccao-validacao__tabela__linha">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 5</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>Sexo</span></div>
-                                <input type="number" min="0" class="--border-r-thick">
+                                <input type="number" min="0" class="input-celular--focus --border-r-thick">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 12</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>Resultado teste Sífilis</span></div>
-                                <input type="number" min="0">
+                                <input type="number" min="0" class="input-celular--focus">
                             </div>
                         </div>
                         <div class="ficha-verso__seccao-validacao__tabela2">
@@ -670,18 +674,18 @@
                             <div class="seccao-validacao__tabela__linha seccao-validacao__tabela__linha--t2 --border-b">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 7</span></div>
                                 <label class="--display-flex-y-center --border-r-thick">Corrimento uretral</label>
-                                <input type="number" min="0" class="--border-r-thick">
+                                <input type="number" min="0" class="input-celular--focus --border-r-thick">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 5</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>Sexo /M</span></div>
-                                <input type="number" min="0">
+                                <input type="number" min="0" class="input-celular--focus">
                             </div>
                             <div class="seccao-validacao__tabela__linha seccao-validacao__tabela__linha--t2">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 9</span></div>
                                 <label class="--display-flex-y-center --border-r-thick">Leucorreia</label>
-                                <input type="number" min="0" class="--border-r-thick">
+                                <input type="number" min="0" class="input-celular--focus --border-r-thick">
                                 <div class="--display-flex-y-center --border-r-thick"><span>Coluna 5</span></div>
                                 <div class="--display-flex-y-center --border-r-thick"><span>Sexo /F</span></div>
-                                <input type="number" min="0">
+                                <input type="number" min="0" class="input-celular--focus">
                             </div>
                         </div>
                     </div>
@@ -692,12 +696,12 @@
                             <span>Elaborado por:</span>
                         </div>
                         <div class="ficha__rodape__col-nome">
-                            <label for="nome-do-elaborador">Nome</label>
-                            <input type="text" id="nome-do-elaborador" class="input-nao-celular --border-b">
+                            <label for="input-nome-do-elaborador">Nome</label>
+                            <input type="text" id="input-nome-do-elaborador" class="input-nao-celular --border-b">
                         </div>
                         <div class="ficha__rodape__col-assinatura">
-                            <label for="assinatura-do-elaborador">Assinatura</label>
-                            <input type="text" id="assinatura-do-elaborador" class="input-nao-celular --border-b">
+                            <label for="input-assinatura-do-elaborador">Assinatura</label>
+                            <input type="text" id="input-assinatura-do-elaborador" class="input-nao-celular --border-b">
                         </div>
                     </div>
                     <div class="ficha__rodape__col ficha__rodape__col--cols-3 --border-thick">
@@ -705,26 +709,25 @@
                             <span>Validado por:</span>
                         </div>
                         <div class="ficha__rodape__col-nome">
-                            <label for="nome-do-validador">Nome</label>
-                            <input type="text" id="nome-do-validador" class="input-nao-celular --border-b">
+                            <label for="input-nome-do-validador">Nome</label>
+                            <input type="text" id="input-nome-do-validador" class="input-nao-celular --border-b">
                         </div>
                         <div class="ficha__rodape__col-assinatura">
-                            <label for="assinatura-do-validador">Assinatura</label>
-                            <input type="text" id="assinatura-do-validador" class="input-nao-celular --border-b">
+                            <label for="input-assinatura-do-validador">Assinatura</label>
+                            <input type="text" id="input-assinatura-do-validador" class="input-nao-celular --border-b">
                         </div>
                         <div class="ficha__rodape__col-data">
-                            <label for="data">Data</label>
-                            <input type="date" id="data" class="input-nao-celular --border-b">
+                            <label for="input-data">Data</label>
+                            <input type="date" id="input-data" class="input-nao-celular --border-b">
                         </div>
                     </div>
                 </footer>
             </div>
-            
             <div class="layout-row layout-row--obs layout-row--no-padding --display-none">
                 <span class="obs__label --fw-700">Observações:</span>
                 <p contenteditable="true" id="input-obs" class="obs__input"></p>
             </div>
-            <div class="reference --no-print">
+            <div class="reference --no-print --display-none">
                 <div class="layout-row layout-row--of-reference">
                     <span class="reference__label">Linha:</span> 
                     <output class="reference__output reference__output--indicador --display-flex-y-center"></output>
@@ -779,33 +782,33 @@
                     </li>
                     <li>
                         <input type=checkbox checked id="checkbox-us" data-for=input-us>
-                        <label for=checkbox-us>Unidade Sanitária</label>
+                        <label for=checkbox-us>Nome US</label>
                     </li>
                     <li>
-                        <input type=checkbox checked id="checkbox-mes" data-for=input-mes>
-                        <label for=checkbox-mes>Mês</label>
+                        <input type=checkbox checked id="checkbox-mes" data-for=input-mes-ano>
+                        <label for=checkbox-mes>Mês/Ano</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-ano checked data-for=input-ano>
-                        <label for=checkbox-ano>Ano</label>
+                        <input type=checkbox id=checkbox-nome checked data-for=input-nome-do-elaborador>
+                        <label for=checkbox-nome>Nome (Elaborado por)</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-nome checked data-for=input-nome>
-                        <label for=checkbox-nome>Nome</label>
+                        <input type=checkbox id=checkbox-assinatura-elaborador checked data-for=input-assinatura-do-elaborador>
+                        <label for=checkbox-assinatura-elaborador>Assinatura (Elaborado por)</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-data-de-elaboracao checked data-for=input-data-de-elaboracao>
-                        <label for=checkbox-data-de-elaboracao>Data de elaboração</label>
+                        <input type=checkbox id=checkbox-nome-validador checked data-for=input-nome-do-validador>
+                        <label for=checkbox-nome-validador>Nome (Validado por)</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-assinatura checked data-for=input-assinatura-do-revisor>
-                        <label for=checkbox-assinatura>Assinatura do Revisor do Resumo Mensal</label>
+                        <input type=checkbox id=checkbox-assinatura-validador checked data-for=input-assinatura-do-validador>
+                        <label for=checkbox-assinatura-validador>Assinatura (Validado por)</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-data checked data-for=input-data-de-revisao>
-                        <label for=checkbox-data>Data de Revisão</label>
+                        <input type=checkbox id=checkbox-data checked data-for=input-data>
+                        <label for=checkbox-data>Data (Validado por)</label>
                     </li>
-                    <li>
+                    <li class="dialog-box-esvaziar-ficha__ul-dados-adicionais__obs">
                         <input type=checkbox id=checkbox-obs checked data-for=input-obs>
                         <label for=checkbox-obs>Observações</label>
                     </li>
@@ -861,10 +864,6 @@
                     <p class="artigo__p--destaque --sem-sombra">A cor de realce de fundo  das células não afecta a impressão.</p>
                 </details>
                 <details class="artigo__details">
-                     <summary class="details__summary">Ir para a linha...</summary>
-                    <p>Abre um campo no qual pode digitar um número de linha no formato <b>LETRANÚMERO</b> (ex.: <b>E3</b>) e, uma vez digitado o número, a página rola até a linha correspondente ao número.</p>
-                </details>
-                <details class="artigo__details">
                     <summary class="details__summary">Esvaziar ficha</summary>
                     <p>Comando para limpar parcial ou completamente a ficha após confirmação da acção na caixa de diálogo subsequente.</p>
                     <figure class="details__moldura details__moldura--margin-l">
@@ -901,7 +900,7 @@
                     <summary class="details__summary">Algumas células ficaram vermelhas</summary>
                     <p>Uma célula adopta um fundo vermelho como sinal de alerta para indicar que o valor contido nela, excedeu a largura fixa da célula e, por isso, os últimos algarismos estão omissos, ou seja, estão fora da área visível da célula.</p>
                 </details>
-                <p class="artigo-ajuda__p--contactar-suporte">Se os tópicos acima não cobrem as suas dúvidas, pode ainda solicitar suporte ao Desenvolvedor pelos seguintes endereços: <a href="mailto:quinamine.aderitofelix@gmail.com?subject=Totalizador%20de%20Resumo%20Mensal%20de%20PrEP">Email</a> e/ou <a href="https://wa.me/258846709901/?text=Olá%2C+Quinamine!+Sobre+o+*totalizador+de+resumo+mensal+de+PrEP*%2C+tenho+a+seguinte+dúvida%3A%20">WhatsApp</a>.</p>
+                <p class="artigo-ajuda__p--contactar-suporte">Se os tópicos acima não cobrem as suas dúvidas, pode ainda solicitar suporte ao Desenvolvedor pelos seguintes endereços: <a href="mailto:quinamine.aderitofelix@gmail.com?subject=Totalizador%20de%20Resumo%20Mensal%20de%20ITS">Email</a> e/ou <a href="https://wa.me/258846709901/?text=Olá%2C+Quinamine!+Sobre+o+*totalizador+de+resumo+mensal+de+ITS*%2C+tenho+a+seguinte+dúvida%3A%20">WhatsApp</a>.</p>
                 <button class="artigo__btn-x artigo__btn-x--fechar-ajuda" title="Fechar">&times;</button>
             </article>
         </section>
@@ -943,7 +942,7 @@
                 <p class="footer__p footer__p--created-by">Criado com atenção e <span class="footer__p__heart">❤</span> por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;">Adérito Félix Quinamine</a> | ©&nbsp;<span class="footer__current-year"></span> Totalizador de Resumo Mensal de <abbr title="Infecções de Transmissão Sexual">ITS</abbr></p>
                 <a href=#root class=footer__link--back-to-top>Rolar para o topo</a>
             </div>
-            <p class="footer__p footer__p--available-since">Disponível desde <time datetime="2025-04-16">16/04/2025</time>.</p>
+            <p class="footer__p footer__p--available-since">Disponível desde <time datetime="2025-04-16">18/04/2025</time>.</p>
         </footer>
         <div class="desfoque"></div>
         <script src="fisiologia/festasfelizes.js"></script>
