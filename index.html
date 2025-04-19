@@ -21,18 +21,7 @@
         <script src="fisiologia/main.js"></script>
         <script src="fisiologia/multifuncoes.js"></script>
         <script src="fisiologia/db.js"></script>
-        <!--
-        <script src="fisiologia/referencia.js"></script>
-         -->
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYZXT38JF"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-LSYZXT38JF');
-        </script>
+        <script src="fisiologia/analise.js"></script>
         <noscript>O seu navegador está com o JavaScript desabilitado e isso bloqueia as funcionalidades do totalizador. Habilite-o nas configurações do navegador e recarregue a página.</noscript>
     </head>
      <body id="body" class="body-com-topo-propaganda" ontouchstart="">
@@ -258,19 +247,19 @@
                             <div class="ficha__grade-inf__colspan-3--prioridade --display-flex-xy-center --border-b-thick"><span>Prioridade (P)</span></div>
                             <div class="ficha__grade-inf__rowspan-3--tendencia --display-flex-xy-center --border-r-thick">
                                 <span>Aumentou<br>
-                                    <svg style="width: 12px; height: 20px; transform: rotate(-128deg)">
+                                    <svg style="width: 12px; height: 20px; transform: rotate(-128deg)" class="seta-aumentou">
                                         <line x1="6" x2="6" y1="0" y2="14" stroke="black" stroke-width="3"></line>
                                         <polygon points="0,14 12,14 6,20"></polygon>
                                     </svg>
                                 </span>
                             </div>
                             <div class="ficha__grade-inf__rowspan-3--tendencia --display-flex-xy-center --border-r-thick"><span>Estacionário<br>
-                                <svg style="width: 12px; height: 20px; transform: rotate(-90deg)">
+                                <svg style="width: 12px; height: 20px; transform: rotate(-90deg)" class="seta-estacionario">
                                     <line x1="6" x2="6" y1="0" y2="14" stroke="black" stroke-width="3"></line>
                                     <polygon points="0,14 12,14 6,20"></polygon>
                                 </svg></span></div>
                             <div class="ficha__grade-inf__rowspan-3--tendencia --display-flex-xy-center --border-r-thick"><span>Diminuiu<br>
-                                <svg style="width: 12px; height: 20px; transform: rotate(-64deg)">
+                                <svg style="width: 12px; height: 20px; transform: rotate(-64deg)" class="seta-diminuiu">
                                     <line x1="6" x2="6" y1="0" y2="14" stroke="black" stroke-width="3"></line>
                                     <polygon points="0,14 12,14 6,20"></polygon>
                                 </svg></span></div>
@@ -288,9 +277,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l1" data-totaloutput="p-l1" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-r" data-total="gr-l1" data-totaloutput="p-l1" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l1">
@@ -304,9 +293,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l2" data-totaloutput="p-l2" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-r" data-total="gr-l2" data-totaloutput="p-l2" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l2">
@@ -320,9 +309,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l3" data-totaloutput="p-l3" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-r" data-total="gr-l3" data-totaloutput="p-l3" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l3">
@@ -336,9 +325,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l4" data-totaloutput="p-l4" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-r" data-total="gr-l4" data-totaloutput="p-l4" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l4">
@@ -352,9 +341,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l5" data-totaloutput="p-l5" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-g" data-total="gr-l5" data-totaloutput="p-l5" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l5">
@@ -368,9 +357,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l6" data-totaloutput="p-l6" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-g" data-total="gr-l6" data-totaloutput="p-l6" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l6">
@@ -384,9 +373,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l7" data-totaloutput="p-l7" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-r" data-total="gr-l7" data-totaloutput="p-l7" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l7">
@@ -400,9 +389,9 @@
                             </div>
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
                             <input type="number" min="0" class="input-celular--focus --border-r-thick">
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
-                            <div class="--display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--aumentou --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--estacionario --display-flex-xy-center --border-r-thick"></div>
+                            <div class="output-seta output-seta--diminuiu --display-flex-xy-center --border-r-thick"></div>
                             <input type="number" min="0" max="1" list="codigos-g" data-total="gr-l8" data-totaloutput="p-l8" class="--border-r-thick">
                             <input type="number" min="0" max="3" list="codigos-r" data-total="gr-l8" data-totaloutput="p-l8" class="--border-r-thick">
                             <input type="number" min="0" readonly class="p-l8">
@@ -586,9 +575,9 @@
                     <input type="number" min="0" readonly class="fvl2-c2 --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c3 --border-r-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c4 --border-r-thicker --border-b-thicker">
-                    <input type="number" min="0" class="fvl2-c5 input-celular--focus --border-r --border-b-thicker">
-                    <input type="number" min="0" class="fvl2-c6 input-celular--focus --border-r --border-b-thicker">
-                    <input type="number" min="0" class="fvl2-c7 input-celular--focus --border-r-thicker --border-b-thicker">
+                    <input type="number" min="0" class="fvl2-c5 input-celular--focus --border-r --border-b-thicker --fw-700">
+                    <input type="number" min="0" class="fvl2-c6 input-celular--focus --border-r --border-b-thicker --fw-700">
+                    <input type="number" min="0" class="fvl2-c7 input-celular--focus --border-r-thicker --border-b-thicker --fw-700">
                     <input type="number" min="0" readonly class="fvl2-c8 --border-l-thicker --border-b-thicker">
                     <input type="number" min="0" readonly class="fvl2-c9 --border-l-thicker --border-r-thicker --border-b-thicker">
                 </div>
@@ -825,12 +814,12 @@
                 <figure>
                     <img alt="Totalizador de Resumo Mensal de ITS" src=imagens/totalizador-de-resumo-mensal-de-its.png class="artigo__img artigo__img--center">
                 </figure>               
-                <p>O <strong>Totalizador de Resumo Mensal de ITS</strong> é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de ITS (Infecções de Transmissão Sexual) por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal da PrEP actualmente vigente no Serviço Nacional de Saúde em Moçambique.</p>
+                <p>O <strong>Totalizador de Resumo Mensal de ITS</strong> é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de ITS (Infecções de Transmissão Sexual) por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de ITS actualmente vigente no Serviço Nacional de Saúde em Moçambique.</p>
                 <h3 class="artigo__titulo artigo__titulo--nivel-2">Objectivos</h3>
                 <ul class="artigo__lista artigo__lista--ul">
-                    <li>Auxiliar os Profissionais de Saúde na totalização do resumo mensal da PrEP com exatidão e prontidão;</li>
+                    <li>Auxiliar os Profissionais de Saúde na totalização do resumo mensal de ITS com exatidão e prontidão;</li>
                     <li>Minimizar possíveis erros de totalização (por exemplo, somar involuntariamente células não correspondentes ou registar o total da linha A, na linha B);</li>
-                    <li>Expandir o acesso à ficha de resumo mensal da PrEP.</li>
+                    <li>Expandir o acesso à ficha de resumo mensal de ITS.</li>
                 </ul>
                 <h3 class="artigo__titulo artigo__titulo--nivel-2 ">O que eu preciso dispor para, e como utilizar o totalizador?</h3>
                 <ul class="artigo__lista artigo__lista--ul">
