@@ -192,7 +192,6 @@
     padding-left: 4px;
     font-size: 12px;
 }
-/* VERSO */
 .ficha-verso__linha-1 {
     display: grid;
     grid-template-columns: 184px calc(23 * 42px) calc(88px + 42px * 2);
