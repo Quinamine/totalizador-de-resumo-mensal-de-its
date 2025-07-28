@@ -38,3 +38,11 @@ window.addEventListener("load", () => {
         });
     });
 })
+
+function soma(operandos) {
+    let soma = 0;
+    for(const o of operandos) {
+        soma+= Number(o.value);
+    }
+    return soma;
+}

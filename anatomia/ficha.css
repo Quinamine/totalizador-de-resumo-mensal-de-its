@@ -171,6 +171,9 @@
     font-size: 10.5px;
     text-align: center;
 }
+.ficha__grade-inf__linha input {
+    text-align: center;
+}
 .grade-inf__col2__titulo {
     text-align: center;
     margin-bottom: 6px;
