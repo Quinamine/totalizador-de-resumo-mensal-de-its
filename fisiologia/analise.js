@@ -5,20 +5,22 @@ function limparCelulas(celulas) {
 }
 function desenharSeta(inputTarget) {
     const linhaDoInputTarget = inputTarget.parentElement;
-    const inputUltimoMes= linhaDoInputTarget.querySelectorAll(".input-celular--focus")[0];
-    const inputMesActual = linhaDoInputTarget.querySelectorAll(".input-celular--focus")[1];
+    let inputUltimoMes= linhaDoInputTarget.querySelectorAll(".input-celular--focus")[0];
+    let inputMesActual = linhaDoInputTarget.querySelectorAll("[readonly]")[0];
+    inputUltimoMes = inputUltimoMes.value.replace(/\D/g, "");
+    inputMesActual = inputMesActual.value.replace(/\D/g, "");
     let outputsDalinhaDoInputTarget = linhaDoInputTarget.querySelectorAll(".output-seta");
     let seta, cloneDaSeta, outputDaSeta;
-    if(inputMesActual.value !== "" && inputUltimoMes.value !== "") {
-        if(Number(inputMesActual.value) > Number(inputUltimoMes.value)) {
+    if(inputMesActual !== "" && inputUltimoMes !== "") {
+        if(Number(inputMesActual) > Number(inputUltimoMes)) {
             seta = document.querySelector(".seta-aumentou");
             cloneDaSeta = seta.cloneNode(seta, true);
             outputDaSeta = linhaDoInputTarget.querySelector(".output-seta--aumentou")
-        } else if(Number(inputMesActual.value) === Number(inputUltimoMes.value)) {
+        } else if(Number(inputMesActual) === Number(inputUltimoMes)) {
             seta = document.querySelector(".seta-estacionario");
             cloneDaSeta = seta.cloneNode(seta, true);
             outputDaSeta = linhaDoInputTarget.querySelector(".output-seta--estacionario");
-        } else if(Number(inputMesActual.value) < Number(inputUltimoMes.value)) {
+        } else if(Number(inputMesActual) < Number(inputUltimoMes)) {
             seta = document.querySelector(".seta-diminuiu");
             cloneDaSeta = seta.cloneNode(seta, true);
             outputDaSeta = linhaDoInputTarget.querySelector(".output-seta--diminuiu");
@@ -36,13 +38,6 @@ window.addEventListener("load", () => {
         inputTarget.addEventListener("input", () => {
             desenharSeta(inputTarget);
         });
+        desenharSeta(inputTarget)
     });
 })
-
-function soma(operandos) {
-    let soma = 0;
-    for(const o of operandos) {
-        soma+= Number(o.value);
-    }
-    return soma;
-}

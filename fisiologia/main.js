@@ -18,35 +18,100 @@ const backup = {
     }
 }
 const totalizador = {
-    filtrarEtotalizarCelulas(inputTarget) {
-        let classNameDosOperandos = inputTarget.dataset.total;
+    totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida) {
         inputTarget.classList.add(`${classNameDosOperandos}`);  
         let operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
-        let celulaDeSaida = document.querySelector(`.${inputTarget.dataset.totaloutput}`);
+        let celulaDeSaida = document.querySelector(`.${classNameDeCelulaDeSaida}`);
         celulaDeSaida.value = this.somar(operandos);
+    },
+    filtrarEtotalizarCelulas(inputTarget) {
+        this.totalizar(inputTarget, `${inputTarget.dataset.total}`, `${inputTarget.dataset.totaloutput}`);
         if(inputTarget.dataset.totalsindromes) {
-            classNameDosOperandos = inputTarget.dataset.totalsindromes;
-            inputTarget.classList.add(`${classNameDosOperandos}`);  
-            operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
-            celulaDeSaida = document.querySelector(`.${inputTarget.dataset.totalsindromesoutput}`);
-            celulaDeSaida.value = this.somar(operandos);
+            const classNameDosOperandos = inputTarget.dataset.totalsindromes;
+            const classNameDeCelulaDeSaida = inputTarget.dataset.totalsindromesoutput;
+            this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida);
         }
         if(inputTarget.dataset.validacao) {
-            classNameDosOperandos = inputTarget.dataset.validacao;
-            inputTarget.classList.add(`${classNameDosOperandos}`);  
-            operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
-            celulaDeSaida = document.querySelector(`.${inputTarget.dataset.validacaooutput}`);
-            celulaDeSaida.value = this.somar(operandos);
+            const classNameDosOperandos = inputTarget.dataset.validacao;
+            const classNameDeCelulaDeSaida = inputTarget.dataset.validacaooutput;
+            this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida);
         }
-        if(inputTarget.dataset.analise) {
-            let classNameDosOperandos = inputTarget.dataset.analise;
+        if(inputTarget.dataset.analise1ponto1) {
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise1ponto1output}`);
+            analiseOutput.value = inputTarget.value;
+        }
+        if(inputTarget.dataset.analise2ponto2) {
+            let classNameDosOperandos = inputTarget.dataset.analise2ponto2;
             let classNameDoDivisor = classNameDosOperandos.split("-div-")[1];
             inputTarget.classList.add(`${classNameDosOperandos}`);
             const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
             const divisor = document.querySelector(`.${classNameDoDivisor}`);
             let div = (this.somar(operandos) - divisor.value) / divisor.value * 100;
-            div = (div%2===0) ? div : div.toFixed(1);
-            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analiseoutput}`);
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise2ponto2output}`);
+            analiseOutput.value = `${div}%`;
+        }
+        if(inputTarget.dataset.analise4ponto4) {
+            let classNameDosOperandos = inputTarget.dataset.analise4ponto4;
+            let classNameDoDivisor = classNameDosOperandos.split("-div-")[1];
+            inputTarget.classList.add(`${classNameDosOperandos}`);
+            const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            const divisor = document.querySelector(`.${classNameDoDivisor}`);
+            let div = (this.somar(operandos) - divisor.value) / divisor.value * 100;
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto4output}`);
+            analiseOutput.value = `${div}%`;
+        }
+        if(inputTarget.dataset.analise3ponto1) {
+            let classNameDosOperandos = inputTarget.dataset.analise3ponto1;
+            let classNameDoDivisor = classNameDosOperandos.split("-div-")[1];
+            inputTarget.classList.add(`${classNameDosOperandos}`);
+            const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            const divisor = document.querySelector(`.${classNameDoDivisor}`);
+            let div = (this.somar(operandos) - divisor.value) / divisor.value;
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise3ponto1output}`);
+            analiseOutput.value = div;
+        }
+        if(inputTarget.dataset.analise3ponto2) {
+            let classNameDosOperandos = inputTarget.dataset.analise3ponto2;
+            let classNameDoDivisor = classNameDosOperandos.split("-div-")[1];
+            inputTarget.classList.add(`${classNameDosOperandos}`);
+            const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            const divisor = document.querySelector(`.${classNameDoDivisor}`);
+            let div = (this.somar(operandos) - divisor.value) / divisor.value;
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise3ponto2output}`);
+            analiseOutput.value = div;
+        }
+        if(inputTarget.dataset.analise4ponto1) {
+            let classNameDosOperandos = inputTarget.dataset.analise4ponto1;
+            let classNameDoDividendo = classNameDosOperandos.split("-div-")[0];
+            inputTarget.classList.add(`${classNameDosOperandos}`);
+            const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            const dividendo = document.querySelector(`.${classNameDoDividendo}`);
+            let div = dividendo.value / (this.somar(operandos) - dividendo.value) * 100;
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto1output}`);
+            analiseOutput.value = `${div}%`;
+        }
+        if(inputTarget.dataset.analise4ponto5) {
+            let classNameDosOperandos = inputTarget.dataset.analise4ponto5;
+            let classNameDoDivisor = classNameDosOperandos.split("-div-")[1];
+            inputTarget.classList.add(`${classNameDosOperandos}`);
+            const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+            const divisor = document.querySelector(`.${classNameDoDivisor}`);
+            let div = (this.somar(operandos) - divisor.value) / divisor.value * 100;
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto5output}`);
+            analiseOutput.value = `${div}%`;
+        }
+        if(inputTarget.dataset.analise4ponto6output) {
+            const pvHIVrastreadasIts = document.getElementById("rastreio-de-pvhiv");
+            const consultasDePvHIV = document.getElementById("consultas-de-pvhiv");
+            let div = pvHIVrastreadasIts.value / consultasDePvHIV.value * 100;
+            div = (Number.isInteger(div)) ? div : div.toFixed(1);
+            const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto6output}`);
             analiseOutput.value = `${div}%`;
         }
     },
@@ -59,7 +124,7 @@ const totalizador = {
     },
 }
 function escutarEventos() {
-    const inputsCelulares = document.querySelectorAll("[data-total]");
+    const inputsCelulares = document.querySelectorAll("[data-total], [data-analise3ponto1], [data-analise4ponto6output]");
     inputsCelulares.forEach( inputCelular => {
         inputCelular.addEventListener("input", () => {
             totalizador.filtrarEtotalizarCelulas(inputCelular);
