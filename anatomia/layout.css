@@ -916,6 +916,9 @@ details[open] .details__summary {
         display: none;
     }
 }
+.ficha__url-pub {
+    display: none;
+}
 @media print {
     @page {
         margin: .5cm;
@@ -923,6 +926,14 @@ details[open] .details__summary {
     }
     .--no-print {
         display: none;
+    }
+    .ficha__url-pub {
+        display: block;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .ficha__url-pub__link {
+        color: var(--cor-de-link);
     }
 }
 .topo-propaganda {
