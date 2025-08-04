@@ -87,6 +87,6 @@ abbr {
     text-decoration: none;
 }
 ::selection {
-    background-color: var(--gray--d);
-    color: var(--fullblack)
+    background-color: var(--gray-d);
+    color: var(--black)
 }

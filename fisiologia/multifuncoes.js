@@ -45,6 +45,7 @@ function destacarCelulasComConteudoOmisso() {
             const motivoDeSaturacao =  document.querySelector(".artigo__details--motivo-de-celulas-vermelhas");
             menu.abrirArtigo("ajuda");
             motivoDeSaturacao.setAttribute("open", "");
+            motivoDeSaturacao.classList.add("--borda-de-destaque");
             motivoDeSaturacao.scrollIntoView();
         }, 2500);
     }  
@@ -52,6 +53,10 @@ function destacarCelulasComConteudoOmisso() {
 function removerDestaqueDeRedCells() {
     const celulas = document.querySelectorAll("[data-total], .input-celular--focus, [readonly]");
     for (const c of celulas) c.classList.remove("input--bg-color-danger");
+}
+function removerBordaDoMovitoDeRedCells() {
+    const motivoDeRedCells =  document.querySelector(".artigo__details--motivo-de-celulas-vermelhas");
+    motivoDeRedCells.classList.remove("--borda-de-destaque");
 }
 const aqd = {
     mostrarAviso() {

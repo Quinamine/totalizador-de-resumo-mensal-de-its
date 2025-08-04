@@ -109,7 +109,7 @@ const menu = {
         const urlOutput = document.querySelector(".ficha__url-pub");
         const url = location.href;
         urlOutput.innerHTML = `Totalizado por computador. Totalizador disponível em: <span class="ficha__url-pub__link">${url}</span>`;
-        window.print()
+        window.print();
     },
     abrirArtigo(artigo) {
         const artigoSobre = document.querySelector(".artigo--sobre");
