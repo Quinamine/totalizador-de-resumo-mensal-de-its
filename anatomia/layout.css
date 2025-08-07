@@ -12,9 +12,9 @@
     --black-a8: rgba(0, 0, 0, .8);
     --yt: #ffffff;
     --gray: #888888;
-    --gray-4: #444444;
-    --gray-5: #555555;
-    --gray-6:#686868;
+    --gray-four: #444444;
+    --gray-five: #555555;
+    --gray-six:#686868;
     --gray-a: #aaaaaa;
     --gray-c: #cccccc;
     --gray-d: #dddddd;
@@ -34,7 +34,7 @@
     :root {
         --cor-de-borda: var(--black);
         --cor-de-texto: var(--black);
-        --gray-4: var(--black);
+        --gray-four: var(--black);
         --gray-a: var(--yt);
     }
 }
@@ -269,7 +269,7 @@
 }
 .footer__p--available-since {  
     padding: 15px 15px 40px;
-    color: var(--gray-5);
+    color: var(--gray-five);
 }
 .footer__link--back-to-top {
     position: absolute;
@@ -430,7 +430,7 @@
 @media screen and (max-width: 1023px) {
     .artigo__titulo--ajuda-e-procedimentos{
         padding: 15px;
-        box-shadow: 0 0 8px var(--gray-5);
+        box-shadow: 0 0 8px var(--gray-five);
         position: sticky;
         top: 0;
         background-color: var(--yt);
@@ -440,7 +440,7 @@
 }
 @media screen and (min-width: 1024px) {
     .artigo__titulo--ajuda-e-procedimentos {
-        border-bottom: 8px solid var(--gray-4);
+        border-bottom: 8px solid var(--gray-four);
     }
 }
 .artigo__titulo--nivel-2 {
@@ -524,7 +524,7 @@ details p {
     padding: 10px 0;
     font-weight: bold;
     font-size: 16px;
-    color: var(--gray-5);
+    color: var(--gray-five);
     transition-duration: 150ms;
     border-top: thin solid var(--gray-d);
 }
@@ -570,7 +570,7 @@ details[open] .details__summary {
     line-height: 1.5;
     border: 1px solid var(--gray);
     background-color: var(--gray-light);
-    box-shadow: 0 2px 8px var(--gray-5);
+    box-shadow: 0 2px 8px var(--gray-five);
     position: fixed;
     right: calc(50vw - (var(--layout-width) + 15px) / 2);
     bottom: -164px;
@@ -645,7 +645,7 @@ details[open] .details__summary {
 .dialog-box-ir-para {
     justify-content: space-between;
     padding: 4px;
-    background-color: var(--gray-4);
+    background-color: var(--gray-four);
     position: fixed;
     top: -35px;
     right: calc(50vw - 252px / 2);
@@ -673,7 +673,7 @@ details[open] .details__summary {
 .dialog-box-ir-para__input-linha {
     width: 188px;
     padding: 2px 0 2px 5px;
-    border: 2px solid var(--gray-4);
+    border: 2px solid var(--gray-four);
     background-color: var(--gray-d);
     text-align: left;
     font-size: 12px;
@@ -773,7 +773,7 @@ details[open] .details__summary {
 }
 .dialog-box-esvaziar-ficha__p--fs-small {
     font-size: 12px;
-    color: var(--gray-5);
+    color: var(--gray-five);
 }
 .dialog-box-esvaziar-ficha__ul-dados-adicionais {
     max-height: 164px;
@@ -932,9 +932,10 @@ details[open] .details__summary {
     }
     .ficha__url-pub {
         display: block;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
-        position: fixed;
+        color: #555555;
+        position: absolute;
         bottom: 0;
         left: 0;
         z-index: 1000000000;
