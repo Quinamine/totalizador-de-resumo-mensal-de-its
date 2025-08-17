@@ -33,7 +33,11 @@ const totalizador = {
         }
     },
     filtrarOperandos(inputTarget) {
-        this.totalizar(inputTarget, `${inputTarget.dataset.total}`, `${inputTarget.dataset.totaloutput}`);
+        if(inputTarget.dataset.total) {
+            const classNameDosOperandos = inputTarget.dataset.total;
+            const classNameDeCelulaDeSaida = inputTarget.dataset.totaloutput;
+            this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, 0);
+        }
         if(inputTarget.dataset.totalsindromes) {
             const classNameDosOperandos = inputTarget.dataset.totalsindromes;
             const classNameDeCelulaDeSaida = inputTarget.dataset.totalsindromesoutput;

@@ -38,6 +38,6 @@ window.addEventListener("load", () => {
         inputTarget.addEventListener("input", () => {
             desenharSeta(inputTarget);
         });
-        desenharSeta(inputTarget)
+        desenharSeta(inputTarget);
     });
 })
