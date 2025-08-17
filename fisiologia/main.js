@@ -51,26 +51,36 @@ const totalizador = {
         if(inputTarget.dataset.analise1ponto1) {
             const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise1ponto1output}`);
             analiseOutput.value = inputTarget.value;
+            const outputMesActual = analiseOutput;
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise2ponto2) {
             const classNameDosOperandos = inputTarget.dataset.analise2ponto2;
             const classNameDeCelulaDeSaida = inputTarget.dataset.analise2ponto2output;
             this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, 1);
+            const outputMesActual = document.querySelector(`.${classNameDeCelulaDeSaida}`);
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise4ponto4) {
             const classNameDosOperandos = inputTarget.dataset.analise4ponto4;
             const classNameDeCelulaDeSaida = inputTarget.dataset.analise4ponto4output;
             this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, 1);
+            const outputMesActual = document.querySelector(`.${classNameDeCelulaDeSaida}`);
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise3ponto1) {
             const classNameDosOperandos = inputTarget.dataset.analise3ponto1;
             const classNameDeCelulaDeSaida = inputTarget.dataset.analise3ponto1output;
             this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, "divisao");
+            const outputMesActual = document.querySelector(`.${classNameDeCelulaDeSaida}`);
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise3ponto2) {
             const classNameDosOperandos = inputTarget.dataset.analise3ponto2;
             const classNameDeCelulaDeSaida = inputTarget.dataset.analise3ponto2output;
             this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, "divisao");
+            const outputMesActual = document.querySelector(`.${classNameDeCelulaDeSaida}`);
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise4ponto1) {
             let classNameDosOperandos = inputTarget.dataset.analise4ponto1;
@@ -82,11 +92,15 @@ const totalizador = {
             div = (Number.isInteger(div)) ? div : div.toFixed(1);
             const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto1output}`);
             analiseOutput.value = `${div}%`;
+            const outputMesActual = analiseOutput;
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise4ponto5) {
             const classNameDosOperandos = inputTarget.dataset.analise4ponto5;
             const classNameDeCelulaDeSaida = inputTarget.dataset.analise4ponto5output;
-            this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, 1)
+            this.totalizar(inputTarget, classNameDosOperandos, classNameDeCelulaDeSaida, 1);
+            const outputMesActual = document.querySelector(`.${classNameDeCelulaDeSaida}`);
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
         if(inputTarget.dataset.analise4ponto6output) {
             const pvHIVrastreadasIts = document.getElementById("rastreio-de-pvhiv");
@@ -94,6 +108,8 @@ const totalizador = {
             let div = pvHIVrastreadasIts.value / consultasDePvHIV.value * 100;
             div = (Number.isInteger(div)) ? div : div.toFixed(1);
             const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto6output}`);
+            const outputMesActual = analiseOutput;
+            desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
             analiseOutput.value = `${div}%`;
         }
     },
