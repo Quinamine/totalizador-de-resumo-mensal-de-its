@@ -7,8 +7,8 @@ function desenharSeta(inputUltimoMes, inputMesActual) {
     let linhaDoInputTarget = inputMesActual.parentElement;
     let outputsDasSetas = linhaDoInputTarget.querySelectorAll(".output-seta");
     let seta, cloneDaSeta, outputDaSeta;
-    inputUltimoMes = inputUltimoMes.value.replace(/[^0-9.]/g, "");
-    inputMesActual = inputMesActual.value.replace(/[^0-9.]/g, "");
+    inputUltimoMes = inputUltimoMes.value.replace(",",".").replace(/[^0-9.]/g, "")
+    inputMesActual = inputMesActual.value.replace(",",".").replace(/[^0-9.]/g, "");
     if(inputMesActual !== "" && inputUltimoMes !== "") {
         if(Number(inputMesActual) > Number(inputUltimoMes)) {
             seta = document.querySelector(".seta-aumentou");

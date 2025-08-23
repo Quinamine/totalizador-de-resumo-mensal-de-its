@@ -108,9 +108,9 @@ const totalizador = {
             let div = pvHIVrastreadasIts.value / consultasDePvHIV.value * 100;
             div = (Number.isInteger(div)) ? div : div.toFixed(1);
             const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto6output}`);
+            analiseOutput.value = `${div}%`;
             const outputMesActual = analiseOutput;
             desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
-            analiseOutput.value = `${div}%`;
         }
     },
     somar(operandos) {
