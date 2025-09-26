@@ -30,6 +30,9 @@ const totalizador = {
             eTaxa === 1 && (taxa *= 100);
             taxa = (Number.isInteger(taxa)) ? taxa : taxa.toFixed(1);
             celulaDeSaida.value = eTaxa === 1 ? `${taxa}%` : taxa;
+            if(taxa === "NaN" || taxa === "Infinity") {
+                celulaDeSaida.value = "";
+            }
         }
     },
     filtrarOperandos(inputTarget) {
@@ -92,6 +95,7 @@ const totalizador = {
             div = (Number.isInteger(div)) ? div : div.toFixed(1);
             const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto1output}`);
             analiseOutput.value = `${div}%`;
+            if(div === "NaN" || div === "Infinity") analiseOutput.value = "";
             const outputMesActual = analiseOutput;
             desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
@@ -109,6 +113,7 @@ const totalizador = {
             div = (Number.isInteger(div)) ? div : div.toFixed(1);
             const analiseOutput = document.querySelector(`.${inputTarget.dataset.analise4ponto6output}`);
             analiseOutput.value = `${div}%`;
+            if(div === "NaN" || div === "Infinity") analiseOutput.value = "";
             const outputMesActual = analiseOutput;
             desenharSeta(outputMesActual.previousElementSibling, outputMesActual);
         }
