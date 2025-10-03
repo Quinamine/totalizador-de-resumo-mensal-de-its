@@ -2,7 +2,7 @@
 
 ![Trecho do Totalizador do Resumo Trimestral de APSS/PP](imagens/totalizador-de-resumo-mensal-de-its.png)
 
-O **Totalizador de Resumo Mensal de ITS** é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de ITS (Infecções de Transmissão Sexual) por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da ficha de resumo trimestral de APSS/PP actualmente vigente no Serviço Nacional de Saúde em Moçambique.
+O **Totalizador de Resumo Mensal de ITS** é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de ITS (Infecções de Transmissão Sexual) por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da ficha de resumo trimestral de APSS/PP actualmente vigente no Serviço Nacional de Saúde em Moçambique.
 
 
 ## Objectivos
